@@ -23,7 +23,7 @@ class Dice {
                 document.getElementById("face").src = "six.png"
                 document.getElementById("face").style.height = "170px"
             } else {
-                document.error("Erro")
+                console.error("Erro")
             }
         }
     }
