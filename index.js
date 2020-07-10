@@ -21,6 +21,7 @@ class Dice {
                 document.getElementById("face").style.height = "170px"
             } else if (this.sorteio === 6) {
                 document.getElementById("face").src = "six.png"
+                document.getElementById("face").style.height = "170px"
             } else {
                 document.error("Erro")
             }
@@ -29,8 +30,8 @@ class Dice {
 
     again() {
         let r = document.getElementsByClassName("btn2")[0]
-
-        r.onclick = _ => document.getElementById("face").src = "one.png"
+        
+        r.onclick = _ => window.location.reload(false)
     }
 }
 
